@@ -11,10 +11,21 @@
 		"lint": "eslint --fix . --ext .js,.jsx"
 	},
 	"dependencies": {
+		"@react-native-community/masked-view": "^0.1.11",
+		"@react-navigation/bottom-tabs": "^5.x",
+		"@react-navigation/drawer": "^5.x",
+		"@react-navigation/native": "^5.x",
+		"@react-navigation/stack": "^5.x",
 		"expo": "~47.0.9",
 		"expo-status-bar": "~1.4.2",
+		"native-base": "^3.4.25",
 		"react": "18.1.0",
-		"react-native": "0.70.5"
+		"react-native": "0.70.5",
+		"react-native-gesture-handler": "~2.8.0",
+		"react-native-reanimated": "~2.12.0",
+		"react-native-safe-area-context": "4.4.1",
+		"react-native-screens": "~3.18.0",
+		"react-native-svg": "13.4.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.9",
@@ -30,8 +41,8 @@
 	},
 	"husky": {
 		"hooks": {
-		"pre-commit": "npm test",
-		"pre-push": "npm test"
+			"pre-commit": "npm test",
+			"pre-push": "npm test"
 		}
 	},
 	"private": true
