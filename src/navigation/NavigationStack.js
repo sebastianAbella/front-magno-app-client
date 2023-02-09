@@ -8,9 +8,21 @@ const Stack = createStackNavigator();
 export default function NavigationStack() {
 	return (
 		<Stack.Navigator initialRouteName='Principal'>
-			<Stack.Screen name='Principal' component={PrincipalView} />
-			<Stack.Screen name='Login' component={Login} />
-			<Stack.Screen name='SiginUp' component={SiginUp} />
+			<Stack.Screen
+				name='Principal'
+				component={PrincipalView}
+				options={{ title: '', headerTransparent: true }}
+			/>
+			<Stack.Screen
+				name='Login'
+				component={Login}
+				options={{ title: '', headerTransparent: true }}
+			/>
+			<Stack.Screen
+				name='SiginUp'
+				component={SiginUp}
+				options={{ title: '', headerTransparent: true }}
+			/>
 		</Stack.Navigator>
 	);
 }
