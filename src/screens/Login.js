@@ -10,7 +10,13 @@ import { StyleSheet } from 'react-native';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
-export default function Login() {
+export default function Login(props) {
+	const { navigation } = props;
+
+	const goToPage = (pageName) => {
+		navigation.navigate(pageName);
+	};
+
 	const formik = useFormik({
 		initialValues: initialValues(),
 		validationSchema: Yup.object(validationSchema()),
@@ -76,6 +82,7 @@ export default function Login() {
 							¿Olvidaste tu contraseña?
 						</Link>
 						<Link
+							onPress={() => goToPage('SiginUp')}
 							position='absolute'
 							top='87%'
 							left='40%'
